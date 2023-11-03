@@ -1,0 +1,49 @@
+
+/*Implement singly circular linked list using tail pointer
+ *  (no head pointer). 
+Compare time complexities of all operations.*/
+
+package com.sunbeam;
+
+public class List 
+{
+ public class node
+ {
+	 private int data;
+	 private node next;
+	 public node(int value)
+	 {
+		 data=value;
+		 next=null;
+	 }
+ }
+	 private node tail;
+	 public List()
+	 {
+		 tail=null;
+	 }
+	 
+	 public boolean isEmpty()
+	 {
+		 return tail.next==null;
+	 }
+	 public void addLast(int value)
+	 {
+		 node newnode=new node(value);
+	
+		 if(tail.next==null)
+		 {
+			 tail.next=newnode;
+		 }
+		 else
+		 {
+			 node trav=tail.next;
+			 while(trav.next!=null)
+			 {
+				 System.out.println(" "+trav.data);
+				 trav=trav.next;
+			 }
+		 }
+	 }
+ }
+

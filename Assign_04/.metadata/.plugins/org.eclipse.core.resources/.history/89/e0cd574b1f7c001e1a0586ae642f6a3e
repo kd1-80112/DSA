@@ -1,0 +1,152 @@
+package com.sunbeam;
+
+public class SinglyLinearLL {
+	public class node {
+		private int data;
+		private node next;
+
+		public node(int value) {
+			data = value;
+			next = null;
+		}
+	}
+
+	private node head;
+	private node tail;
+	private int count;
+
+	public SinglyLinearLL() {
+		head = null;
+		tail = null;
+		count = 0;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public boolean isEmpty() {
+		return (head == null && tail == null);
+
+	}
+
+	public void addLast(int value) {
+		node newnode = new node(value);
+
+		if (isEmpty()) {
+			head = newnode;
+			tail = newnode;
+		} else if (head.next == null)
+
+		{
+			tail = newnode;
+			head.next = tail;
+
+		} else {
+			tail.next = newnode;
+			tail = newnode;
+		}
+		count++;
+	}
+
+	public void displayall() {
+		node trav = head;
+		while (trav != null) {
+			System.out.print(" " + trav.data);
+			trav = trav.next;
+		}
+		System.out.println("");
+
+	}
+
+	public void addFirst(int value) {
+		node newnode = new node(value);
+		if (isEmpty()) {
+			head = newnode;
+		} else if (head.next == null) {
+			head.next = newnode;
+		} else {
+			newnode.next = head;
+			head = newnode;
+		}
+		count++;
+	}
+
+	public void deleteFirst() {
+		if (isEmpty()) {
+			System.out.println("list is empty");
+		} else {
+			head = head.next;
+		}
+        count--;
+	}
+
+	public void deleteLast() {
+		if (isEmpty()) {
+			System.out.println("list is empty");
+		} else if (head.next == null) {
+			head = null;
+		} else {
+			node trav = head;
+			while (trav.next.next != null) {
+				trav = trav.next;
+
+			}
+
+			tail = trav.next;
+			trav.next = null;
+
+		}
+      count--;
+	}
+	public int middle()
+	{
+		node trav1=head;
+		node trav2=head;
+		if(count%2!=0)
+		{
+		while(trav2.next!=null)
+		{
+		
+			trav2=trav2.next.next;
+			trav1=trav1.next;
+		}
+		return trav1.data;	
+		
+		}
+		
+		if(count%2==0)
+		{
+			trav2=head.next;
+		while(trav2.next.next!=null)
+		{
+		
+			trav2=trav2.next;
+			trav1=trav1.next;
+		}
+		return trav1.data;	
+		
+		}
+
+		
+	    return 0;
+	}
+	public void reverse()
+	{
+		node trav=null;
+		while(trav.next!=null)
+		{
+			trav=trav.next;
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+

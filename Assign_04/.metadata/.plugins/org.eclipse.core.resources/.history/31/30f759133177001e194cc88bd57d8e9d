@@ -1,0 +1,21 @@
+
+ /*Implement a singly linear linked list with head 
+  * and tail pointer. Implement addFirst(), addLast(), 
+  * delFirst(), delLast, display() operations.
+  */
+
+package com.sunbeam;
+
+public class SinglyMain {
+
+	public static void main(String[] args) {
+		SinglyLinearLL  l1=new SinglyLinearLL ();
+		l1.addLast(10);
+		l1.addLast(20);
+		l1.addLast(30);
+		l1.addFirst(40);
+		l1.displayall();
+    		
+	}
+
+}

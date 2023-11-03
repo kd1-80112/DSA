@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/home/sunbeam/STS/sts_dsa/Assign_04/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+3491812812.index
+2804409690.index
+1043248352.index
+1313095791.index

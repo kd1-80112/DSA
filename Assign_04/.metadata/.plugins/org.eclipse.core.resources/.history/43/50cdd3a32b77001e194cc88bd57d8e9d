@@ -1,0 +1,11 @@
+package com.sunbeam;
+
+public class SinglyMain {
+
+	public static void main(String[] args) {
+		SinglyLinearLL  l1=new SinglyLinearLL ();
+		
+    		
+	}
+
+}
