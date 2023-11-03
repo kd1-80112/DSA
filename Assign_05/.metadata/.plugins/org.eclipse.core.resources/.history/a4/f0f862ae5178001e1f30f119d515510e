@@ -1,0 +1,37 @@
+package com.sunbeam;
+
+public class Deque 
+{
+ private List l1;
+ 
+public Deque()
+{
+	l1=new List();
+}
+
+public void addlast(int value)
+{
+	l1.addLast(value);
+}
+
+public void delFirst()
+{
+	l1.delFirst();
+}
+public void addFirst(int value)
+{
+	l1.addFirst(value);
+}
+public void delLast()
+{
+	l1.delLast();
+}
+public int peek()
+{
+	return l1.getelement();
+}
+public void display()
+{
+	l1.displayAll();
+}
+}

@@ -1,0 +1,20 @@
+package com.sunbeam;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		
+       List l1=new List();
+       l1.addLast(10);
+       l1.addLast(20);
+       l1.addLast(30);
+       l1.displayAll();
+       System.out.println();
+       l1.delLast();
+       l1.displayAll();
+       System.out.println();
+       System.out.println(l1.getelement());
+	}
+
+}

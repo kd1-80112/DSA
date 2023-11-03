@@ -1,0 +1,16 @@
+package com.sunbeam;
+
+public class Deque 
+{
+ private List l1;
+ 
+public Deque()
+{
+	l1=new List();
+}
+
+public void addlast(int value)
+{
+	l1.addLast(value);
+}
+}

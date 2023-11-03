@@ -1,0 +1,10 @@
+package com.sunbeam;
+
+public class List 
+{
+  public class node
+  {
+	  private int data;
+	  private node next;
+  }
+}

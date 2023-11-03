@@ -1,0 +1,16 @@
+package com.sunbeam;
+
+public class Queue 
+{
+  private List l1;
+  
+  public Queue()
+  {
+	  Queue q1=new Queue();
+	  
+  }
+   public void push()
+   {
+	   l1.addLast(value);
+   }
+}

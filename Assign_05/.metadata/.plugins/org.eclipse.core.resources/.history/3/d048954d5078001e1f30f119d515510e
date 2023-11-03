@@ -1,0 +1,10 @@
+package com.sunbeam;
+
+public class Deque 
+{
+ private List l1;
+ 
+public Deque()
+{
+	l1=new List();
+}
