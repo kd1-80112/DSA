@@ -1,0 +1,16 @@
+package com.sunbeam;
+
+import java.util.Scanner;
+
+public class Element {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int[] arr={ 10, 20, 15, 3, 4, 4, 1 };
+		System.out.println("enter number=");
+		int num=sc.nextInt();
+		
+
+	}
+    public static int ele(int[] arr,)
+}

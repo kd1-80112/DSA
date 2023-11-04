@@ -1,0 +1,26 @@
+/*Implement line
+ * ar search algorithm to find the 
+ * nth occurence of the given element. 
+ * If nth occurrence is not found, return -1.
+ */
+
+
+package com.sunbeam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Occurance 
+{
+	public static void main(String[] args)
+	{
+		int[] arr= {10,20,30,40,50,10,10,20,30,40,50,60};
+		
+		for(Integer e:arr)
+		{
+			System.out.print(" "+e);
+		}
+	}
+//	public static void find(int num, )
+
+}

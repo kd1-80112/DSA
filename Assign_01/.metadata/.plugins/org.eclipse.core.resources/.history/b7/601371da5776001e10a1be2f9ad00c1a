@@ -1,0 +1,18 @@
+/*Implement linear search algorithm to find the 
+ * nth occurence of the given element. 
+ * If nth occurrence is not found, return -1.
+ */
+
+
+package com.sunbeam;
+
+import java.util.ArrayList;
+
+public class Occurance 
+{
+	public static void main(String[] args)
+	{
+		List<Integers> list=new ArrayList<E>();
+	}
+
+}

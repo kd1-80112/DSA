@@ -1,0 +1,93 @@
+/*Create array of employees and search employee by 
+
+	i. empid
+	ii. name
+	iii. salary
+	*/
+
+package com.sunbeam;
+
+import java.util.Objects;
+
+public class Employee_02 
+{
+
+	private int id;
+	private String name;
+	private int salary;
+	
+	public Employee_02()
+	{
+		
+	}
+	
+
+	public Employee_02(int id, String name, int salary) 
+	{
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+
+    public String toString()
+    {
+	return id+"  "+name+"  "+salary;
+	 
+    }
+    
+   
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getSalary() {
+		return salary;
+	}
+
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee_02 other = (Employee_02) obj;
+		return id == other.id && Objects.equals(name, other.name) && salary == other.salary;
+	}
+
+
+
+
+
+}
